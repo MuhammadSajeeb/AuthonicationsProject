@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionManagers\RegisterManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Auth.Core\Auth.Core.csproj">
+      <Project>{8eb40d0a-8574-4e7f-b00a-ac56027c26d4}</Project>
+      <Name>Auth.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Auth.Persistancis\Auth.Persistancis.csproj">
+      <Project>{17e9bce7-d928-4089-847c-f2e02ea52153}</Project>
+      <Name>Auth.Persistancis</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
