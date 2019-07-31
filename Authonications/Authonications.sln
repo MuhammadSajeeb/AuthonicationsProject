@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 UserInterface", "01 UserInterface", "{2C11F1EB-4C58-4B14-8FFA-D0FBD1FFC87F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 BuisnessLogicLayer", "02 BuisnessLogicLayer", "{93729E57-6C17-4F11-97BE-846F75A5F660}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 DataAccessLayer", "03 DataAccessLayer", "{A02276C2-F1F2-4EF6-B3C2-1AD106F44BA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Core", "04 Core", "{50368725-083A-410C-A314-CA1FA5FF9CC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Core", "Auth.Core\Auth.Core.csproj", "{8EB40D0A-8574-4E7F-B00A-AC56027C26D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Persistancis", "Auth.Persistancis\Auth.Persistancis.csproj", "{17E9BCE7-D928-4089-847C-F2E02EA52153}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Managers", "Auth.Managers\Auth.Managers.csproj", "{9479D7E0-1AD1-46D0-AEAA-3404C40C4164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authonications.WebApp", "Authonications.WebApp\Authonications.WebApp.csproj", "{0FA98465-336D-4026-86F3-03E218A9B24B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EB40D0A-8574-4E7F-B00A-AC56027C26D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB40D0A-8574-4E7F-B00A-AC56027C26D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB40D0A-8574-4E7F-B00A-AC56027C26D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB40D0A-8574-4E7F-B00A-AC56027C26D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E9BCE7-D928-4089-847C-F2E02EA52153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E9BCE7-D928-4089-847C-F2E02EA52153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E9BCE7-D928-4089-847C-F2E02EA52153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E9BCE7-D928-4089-847C-F2E02EA52153}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9479D7E0-1AD1-46D0-AEAA-3404C40C4164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9479D7E0-1AD1-46D0-AEAA-3404C40C4164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9479D7E0-1AD1-46D0-AEAA-3404C40C4164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9479D7E0-1AD1-46D0-AEAA-3404C40C4164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FA98465-336D-4026-86F3-03E218A9B24B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA98465-336D-4026-86F3-03E218A9B24B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA98465-336D-4026-86F3-03E218A9B24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA98465-336D-4026-86F3-03E218A9B24B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8EB40D0A-8574-4E7F-B00A-AC56027C26D4} = {50368725-083A-410C-A314-CA1FA5FF9CC8}
+		{17E9BCE7-D928-4089-847C-F2E02EA52153} = {A02276C2-F1F2-4EF6-B3C2-1AD106F44BA6}
+		{9479D7E0-1AD1-46D0-AEAA-3404C40C4164} = {93729E57-6C17-4F11-97BE-846F75A5F660}
+		{0FA98465-336D-4026-86F3-03E218A9B24B} = {2C11F1EB-4C58-4B14-8FFA-D0FBD1FFC87F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AC598B7-B53F-4058-B479-26A26F7113A1}
+	EndGlobalSection
+EndGlobal
