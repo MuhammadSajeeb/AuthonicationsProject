@@ -1,14 +1,13 @@
-﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Authonications.WebApp.Account.Register" %>
-
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Authonications.WebApp.Account.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <br/>
+   <br/>
     <br/>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
     </p>
 
     <div class="form-horizontal">
-        <h4>Create a new account</h4>
+        <h2>Login</h2>
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="form-group">
@@ -34,39 +33,20 @@
             </div>
         </div>
         <div class="form-group">
-            <asp:Label runat="server" ID="lblconfirmpasseord" AssociatedControlID="txtconfirmpassword" CssClass="col-md-2 control-label">Confirm password</asp:Label>
-            <div class="col-md-10">
-                <asp:TextBox runat="server" ID="txtconfirmpassword" TextMode="Password" CssClass="form-control" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtconfirmpassword"
-                    CssClass="text-danger" Display="Dynamic" ErrorMessage="The confirm password field is required." />
-                <asp:CompareValidator runat="server" ControlToCompare="txtpassword" ControlToValidate="txtconfirmpassword"
-                    CssClass="text-danger" Display="Dynamic" ErrorMessage="The password and confirmation password do not match." />
-            </div>
-        </div>
-        <div class="form-group">
-            <asp:Label runat="server" ID="lblname" AssociatedControlID="txtname" CssClass="col-md-2 control-label">Name</asp:Label>
-            <div class="col-md-10">
-                <asp:TextBox runat="server" ID="txtname" CssClass="form-control" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtname"
-                    CssClass="text-danger" ErrorMessage="The email field is required." />
-            </div>
-        </div>
-        <div class="form-group">
-            <asp:Label runat="server" ID="lblemail" AssociatedControlID="txtemail" CssClass="col-md-2 control-label">Email</asp:Label>
-            <div class="col-md-10">
-                <asp:TextBox runat="server" ID="txtemail" CssClass="form-control" TextMode="Email" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtemail"
-                    CssClass="text-danger" ErrorMessage="The email field is required." />
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <asp:CheckBox ID="RememeberCheckBox" runat="server" />
+                <asp:Label runat="server" ID="lblRememberme" CssClass="control-label">Rememeber me ?</asp:Label>
             </div>
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <asp:Button runat="server" ID="RegisterButton" Text="Register" CssClass="btn btn-info" OnClick="RegisterButton_Click" />
+                <asp:Button runat="server" ID="LoginButton" Text="Login" CssClass="btn btn-info" OnClick="LoginButton_Click" />
             </div>
         </div>
         <div class="form-group">
             <div class="col-md-offset-1 col-md-10">
-                <a class="nav-link" href="Login.aspx">Now login</a>
+                <a class="nav-link" id="registerlink" href="Register.aspx">you have no account ? then register</a>
             </div>
         </div>
     </div>

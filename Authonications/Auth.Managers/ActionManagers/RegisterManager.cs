@@ -24,5 +24,9 @@ namespace Auth.Managers.ActionManagers
         {
             return _RegisterRepository.Register(_Registers);
         }
+        public decimal Login(Registers _Registers)
+        {
+            return _RegisterRepository.Login(_Registers);
+        }
     }
 }

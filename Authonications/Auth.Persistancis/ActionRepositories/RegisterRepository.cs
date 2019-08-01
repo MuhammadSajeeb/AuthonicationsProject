@@ -26,5 +26,10 @@ namespace Auth.Persistancis.ActionRepositories
             string query = "Insert Into Registers(UserName,Password,Name,Email) Values ('" + _Registers.UserName + "','" + _Registers.Password + "','" + _Registers.Name + "','"+_Registers.Email+"')";
             return _MainRepository.ExecuteNonQuery(query, _MainRepository.ConnectionString());
         }
+        public decimal Login(Registers _Registers)
+        {
+            string query = "Select Count(*)from Registers where UserName='" + _Registers.UserName + "' And Password='"+_Registers.Password+"'";
+            return _MainRepository.ExecuteScalar(query, _MainRepository.ConnectionString());
+        }
     }
 }
